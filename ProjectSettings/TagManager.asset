@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Wall
+  - Dishwasher
+  - rollerGround
   layers:
   - Default
   - TransparentFX
@@ -13,17 +17,17 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Objects
+  - Player
+  - Enemies
+  - Egg
+  - Environment walkable
+  - Environment non walkable
+  - Bullets
+  - Breakables
+  - Occluded
+  - Static Objects
+  - Fog
   - 
   - 
   - 

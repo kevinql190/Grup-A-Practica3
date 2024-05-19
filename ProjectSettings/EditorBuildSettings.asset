@@ -4,6 +4,21 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CELERY SCENES/Title Screen.unity
+    guid: da39a76a82e562c4dae8732f63c043e3
+  - enabled: 1
+    path: Assets/CELERY SCENES/Menu.unity
+    guid: 062ee35310b3d254c823ac7ac335d7ee
+  - enabled: 1
+    path: Assets/CELERY SCENES/Level 1.unity
+    guid: b8905858cce7ca74daf52bdc42f5ade1
+  - enabled: 0
+    path: Assets/CELERY SCENES/Prototip 1 - Playground.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: 8d15978fa11df9348bdca991be7038b9, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 8d15978fa11df9348bdca991be7038b9,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 246ae8d59a7b3d046acaf42979359491,
+      type: 2}
