@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: CeleryLocalizationTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: CeleryLocalizationTable
+  m_TableCollectionNameGuidString: 8491ec00ebb98834599523d288da41a8
+  m_Entries:
+  - m_Id: 57510551552
+    m_Key: btn-start_new_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435702554624
+    m_Key: btn-settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223604989952
+    m_Key: btn-select_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254374404096
+    m_Key: btn-recipe_book
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4743252762624
+    m_Key: btn-exit_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304072712192
+    m_Key: btn-continue_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9956940406784
+    m_Key: title-select_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10966526156800
+    m_Key: btn-setting_video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11066853908480
+    m_Key: btn-setting_audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11091986178048
+    m_Key: btn-setting_controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11114534756352
+    m_Key: btn-setting_language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11679188738048
+    m_Key: option-fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11961012412416
+    m_Key: option-window
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12211966009344
+    m_Key: tag-master
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12412055281664
+    m_Key: tag-music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12585762381824
+    m_Key: tag-sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46006236700672
+    m_Key: screen-cooking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281592413925376
+    m_Key: title-endleveltitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 285893190332416
+    m_Key: title-pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 287264010514432
+    m_Key: title-record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 287714113859584
+    m_Key: screen-loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4345211415519232
+    m_Key: recipe_tomato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4345276431425536
+    m_Key: recipe_carrot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4345284866170880
+    m_Key: recipe_leek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4347919832801280
+    m_Key: recipe_mushroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4351155692199936
+    m_Key: txt_recipe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4373235976462336
+    m_Key: txt_receptari_level
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4626368466005786648
+  references:
+    version: 2
+    RefIds:
+    - rid: 4626368466005786648
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1714394614209

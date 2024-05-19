@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: CeleryLocalizationTable_ca
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ca
+  m_SharedData: {fileID: 11400000, guid: 8491ec00ebb98834599523d288da41a8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 57510551552
+    m_Localized: "COMEN\xC7AR JOC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223604989952
+    m_Localized: SELECCIONAR NIVELL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254374404096
+    m_Localized: RECEPTARI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304072712192
+    m_Localized: CONTINUA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435702554624
+    m_Localized: CONFIGURACIONS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4743252762624
+    m_Localized: SORTIR DEL JOC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9956940406784
+    m_Localized: SELECCIONAR NIVELL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10966526156800
+    m_Localized: "V\xCDDEO"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11066853908480
+    m_Localized: "\xC0UDIO"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11091986178048
+    m_Localized: CONTROLS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11114534756352
+    m_Localized: IDIOMA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11679188738048
+    m_Localized: PANTALLA COMPLETA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11961012412416
+    m_Localized: FINESTRA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12211966009344
+    m_Localized: "\u2022 MASTER"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12412055281664
+    m_Localized: "\u2022 M\xDASICA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12585762381824
+    m_Localized: "\u2022 SFX"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46006236700672
+    m_Localized: CUINANT...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281592413925376
+    m_Localized: Nivell 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 285893190332416
+    m_Localized: PAUSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 287264010514432
+    m_Localized: "R\xE8cord"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 287714113859584
+    m_Localized: Carregant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4345211415519232
+    m_Localized: el tomaquet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4345276431425536
+    m_Localized: la pastanaga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4345284866170880
+    m_Localized: el porro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4347919832801280
+    m_Localized: "el xampiny\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4351155692199936
+    m_Localized: Receptes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4373235976462336
+    m_Localized: Nivell
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Catalan (ca)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Catalan (ca)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 100cb7d9581e37249b2d58c010f2811b
+  m_SerializeEntries:
+  - m_GUID: 7b6ae0306ee38b248ae1575012c777b0
+    m_Address: ca_settings_normal
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ca
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6be5d5f1ef2bd744e8bb046a54cabb95
+    m_Address: ca_receptari_hover
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ca
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f4b6a2f1025d3e4dbf3e5fdafa164be
+    m_Address: ca_receptari_normal
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ca
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 868d546391f604a4e8dda27bced0dd67
+    m_Address: ca_settings_hover
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ca
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 21e7529491c6b7a4f8e5ca44048e15b3, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c1623e9524d11ad41b21f638445388b8, type: 2}
+    - {fileID: 11400000, guid: b4e41f259ef116848a6adbd25e85194f, type: 2}

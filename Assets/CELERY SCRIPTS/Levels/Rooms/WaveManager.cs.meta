@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7e697c67cf27f8b4395cadb66bc7fce0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - waveStartParticlesPrefab: {fileID: 4224453183914652020, guid: 530f96bbbff55694e8bb0a4c768298da,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

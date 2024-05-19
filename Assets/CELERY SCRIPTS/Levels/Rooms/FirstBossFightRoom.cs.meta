@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 328bdc0b7e9f9e64887bd43b37ed0404
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dissolveShader: {fileID: 2100000, guid: 8a984dee494319f489471c7ba6f24ce5, type: 2}
+  - bossPrefab: {instanceID: 0}
+  - bossSpawnPoint: {instanceID: 0}
+  - firstWave: {instanceID: 0}
+  - secondtWave: {instanceID: 0}
+  - thirdWave: {instanceID: 0}
+  - pilarPrefab: {fileID: 1184631527788414872, guid: 5970f7fdfc9e250409c74b3b28d5499e,
+      type: 3}
+  - pilarSpawnPoint: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

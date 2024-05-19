@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 42df78a65633ab449b3d4c87483d5e18
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dissolveShader: {fileID: 2100000, guid: f1af1b33e82e5574b88fd54ce43f70d5, type: 2}
+  - waveManager: {instanceID: 0}
+  - startRoomCamera: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
