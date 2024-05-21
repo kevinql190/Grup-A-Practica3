@@ -11,6 +11,13 @@ public class DialogueTrigger : MonoBehaviour
         {
             Debug.Log("Trigger Enter");
             DialogueManager.Instance.StartDialogue(Conversation, gameObject);
+            Cursor.lockState = CursorLockMode.None;
+            PlayerInputHandler.Instance.playerInput.SwitchCurrentActionMap("UI");
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        PlayerInputHandler.Instance.playerInput.SwitchCurrentActionMap("Gameplay");
     }
 }

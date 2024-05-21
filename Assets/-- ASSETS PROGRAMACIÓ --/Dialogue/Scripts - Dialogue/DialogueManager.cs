@@ -66,4 +66,39 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueAnimator.SetBool("Show", false);
     }
+
+    //------- Cambio de opción ------
+    private void SetText(DialogueNode node) 
+    {
+        for (int i = 0; i < OptionsText.Length; i++)
+        {
+            if (i < node.Options.Count)
+            {
+                OptionsText[i].transform.parent.gameObject.SetActive(true);
+                OptionsText[i].text = node.Options[i].Text;
+            }
+            else 
+            {
+                OptionsText[i].transform.parent.gameObject.SetActive(false);
+            }
+        }
+    }
+    // ------------ End ----------------
+    public void OptionChosen(int option) {
+        _currentNode = _currentNode.Options[option].NextNode;
+        SetText(_currentNode);
+        if (_currentNode is EndNode)
+        {
+            DoEndNode(_currentNode as EndNode);
+        }
+        else {
+            SetText(_currentNode);
+        }
+    }
+
+    private void DoEndNode(EndNode currentNode) 
+    {
+        currentNode.OnChosen(_talker);
+        HideDialogue();
+    }
 }
