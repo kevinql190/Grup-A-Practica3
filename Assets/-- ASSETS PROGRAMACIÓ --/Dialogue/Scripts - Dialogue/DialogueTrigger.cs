@@ -5,10 +5,11 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Conversation Conversation;
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+            Debug.Log("Trigger Enter");
             DialogueManager.Instance.StartDialogue(Conversation, gameObject);
         }
     }
