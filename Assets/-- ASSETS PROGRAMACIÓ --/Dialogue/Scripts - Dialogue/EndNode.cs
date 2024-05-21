@@ -7,6 +7,6 @@ public class EndNode : DialogueNode
 {
     public virtual void OnChosen(GameObject talker) 
     {
-
+        PlayerInputHandler.Instance.playerInput.SwitchCurrentActionMap("Gameplay");
     }
 }

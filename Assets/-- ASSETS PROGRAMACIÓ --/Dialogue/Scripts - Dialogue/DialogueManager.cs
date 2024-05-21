@@ -83,10 +83,11 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
-    // ------------ End ----------------
+    
     public void OptionChosen(int option) {
         _currentNode = _currentNode.Options[option].NextNode;
         SetText(_currentNode);
+        //End
         if (_currentNode is EndNode)
         {
             DoEndNode(_currentNode as EndNode);
