@@ -31,7 +31,6 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-
     public void StartDialogue(Conversation conversation, GameObject talker)
     {
         _talker = talker;
@@ -70,6 +69,7 @@ public class DialogueManager : MonoBehaviour
     //------- Cambio de opción ------
     private void SetText(DialogueNode node) 
     {
+        SpeechText.text = node.Text;
         for (int i = 0; i < OptionsText.Length; i++)
         {
             if (i < node.Options.Count)
@@ -97,9 +97,15 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void DoEndNode(EndNode currentNode) 
+    private void DoEndNode(EndNode currentNode)
     {
         currentNode.OnChosen(_talker);
+        StartCoroutine(HideDialogueWithDelay());
+    }
+
+    private IEnumerator HideDialogueWithDelay()
+    {
+        yield return new WaitForSeconds(1f); // Espera 1 segundo
         HideDialogue();
     }
 }

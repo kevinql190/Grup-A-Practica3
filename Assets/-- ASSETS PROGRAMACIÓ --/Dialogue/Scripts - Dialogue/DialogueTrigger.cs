@@ -9,7 +9,6 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("Trigger Enter");
             DialogueManager.Instance.StartDialogue(Conversation, gameObject);
             Cursor.lockState = CursorLockMode.None;
             PlayerInputHandler.Instance.playerInput.SwitchCurrentActionMap("UI");

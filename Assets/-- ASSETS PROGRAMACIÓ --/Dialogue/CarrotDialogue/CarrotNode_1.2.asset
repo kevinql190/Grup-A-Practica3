@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab514b60ee7138d438b763b3041b7d05, type: 3}
-  m_Name: DoNothing
+  m_Script: {fileID: 11500000, guid: 7228ea4737fa5f64b93c613495c4c905, type: 3}
+  m_Name: CarrotNode_1.2
   m_EditorClassIdentifier: 
-  Text: adeuuu
-  Options: []
+  Text: node 2
+  Options:
+  - Text: Opcio1.1
+    NextNode: {fileID: 11400000, guid: 24fed9fed8124994091ff206bc4ab417, type: 2}

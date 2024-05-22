@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7228ea4737fa5f64b93c613495c4c905, type: 3}
   m_Name: CarrotNode1
   m_EditorClassIdentifier: 
-  Text: "Hola, s\xF3c la Maria la pastanaga, m'agraden les pastanagues oh no me muero
-    me como a mi misma aaaaaa."
+  Text: "Hola s\xF3c la Maria la pastanaga, estic buscant al meu amic \"Carles el
+    tom\xE0quet\". Per casualitat l'has vist?"
   Options:
-  - Text: "Opci\xF3 1"
+  - Text: No, no l'he vist
     NextNode: {fileID: 11400000, guid: 10746ceea85f41c4dac573fd955dfead, type: 2}
-  - Text: "Opci\xF3 2"
+  - Text: "S\xED, el busco"
     NextNode: {fileID: 11400000}
-  - Text: "Opci\xF3 3"
+  - Text: Me l'he menjat
     NextNode: {fileID: 11400000}
