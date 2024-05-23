@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7228ea4737fa5f64b93c613495c4c905, type: 3}
-  m_Name: CarrotNode1
+  m_Name: CarrotNode
   m_EditorClassIdentifier: 
   Text: "Hola s\xF3c la Maria la pastanaga, estic buscant al meu amic \"Carles el
     tom\xE0quet\". Per casualitat l'has vist?"
@@ -18,6 +18,6 @@ MonoBehaviour:
   - Text: No, no l'he vist
     NextNode: {fileID: 11400000, guid: 10746ceea85f41c4dac573fd955dfead, type: 2}
   - Text: "S\xED, el busco"
-    NextNode: {fileID: 11400000}
+    NextNode: {fileID: 11400000, guid: 41e553b7f66e3f447b2ba42719c57e24, type: 2}
   - Text: Me l'he menjat
-    NextNode: {fileID: 11400000}
+    NextNode: {fileID: 11400000, guid: 64456ddc61a5bff4391125584bff84d7, type: 2}
