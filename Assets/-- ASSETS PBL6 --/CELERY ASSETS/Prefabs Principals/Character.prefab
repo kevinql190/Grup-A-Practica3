@@ -5620,7 +5620,7 @@ GameObject:
   - component: {fileID: 6690217744216520207}
   - component: {fileID: 423942497188442383}
   m_Layer: 9
-  m_Name: DashParticles
+  m_Name: DashEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
