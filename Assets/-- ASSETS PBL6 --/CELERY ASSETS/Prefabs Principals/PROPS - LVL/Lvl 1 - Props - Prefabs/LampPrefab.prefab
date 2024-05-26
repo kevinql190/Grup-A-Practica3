@@ -44,17 +44,17 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.82057273, b: 0.65471697, a: 1}
-  m_Intensity: 29.01
-  m_Range: 6
-  m_SpotAngle: 79.92352
-  m_InnerSpotAngle: 55.62121
+  m_Color: {r: 0.7905661, g: 0.89706933, b: 1, a: 1}
+  m_Intensity: 13
+  m_Range: 8.55
+  m_SpotAngle: 82.73215
+  m_InnerSpotAngle: 51.554527
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.168
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -84,7 +84,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -93,7 +93,7 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
+  m_ShadowRadius: 5
   m_ShadowAngle: 0
 --- !u!114 &6145145240472625189
 MonoBehaviour:
@@ -194,7 +194,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34403e0ff1389394cbc733bf0bfc110c,
         type: 3}
       propertyPath: m_Name
-      value: Lamp
+      value: LampPrefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

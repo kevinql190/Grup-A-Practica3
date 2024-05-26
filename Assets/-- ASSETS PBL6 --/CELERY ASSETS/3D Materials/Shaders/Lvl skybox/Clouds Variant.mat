@@ -41,10 +41,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _CloudDistanceFade: 1.7
-    - _Hight: 1.38
+    - _Hight: 0.45
     - _QueueControl: 0
     - _Scale_noise: 5.04
     m_Colors:
     - _CloudAnimationSpeed: {r: 0.15, g: 0.1, b: 0, a: 0}
+    - _CloudColor: {r: 1, g: 0.53383124, b: 0.4660377, a: 0}
     - _CloudScale: {r: 8.55, g: 7.91, b: 0, a: 0}
+    - _Color_Down: {r: 0.2902456, g: 0.45967513, b: 0.5849056, a: 0}
+    - _Color_UP: {r: 0.002044485, g: 0, b: 0.2679245, a: 0}
+    - _Color_Up: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
