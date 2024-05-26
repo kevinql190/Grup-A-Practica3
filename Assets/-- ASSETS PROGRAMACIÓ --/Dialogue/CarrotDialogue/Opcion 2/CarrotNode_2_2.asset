@@ -15,6 +15,6 @@ MonoBehaviour:
   Text: "Com!?!? Aix\xF2 que tens a la paella \xE9s ketchup?!?!?!"
   Options:
   - Text: jejejeje
-    NextNode: {fileID: 0}
+    NextNode: {fileID: 11400000, guid: abc0408d66d15b848b37d6ed1a200074, type: 2}
   - Text: ups
-    NextNode: {fileID: 0}
+    NextNode: {fileID: 11400000, guid: abc0408d66d15b848b37d6ed1a200074, type: 2}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: CarrotNode_2
   m_EditorClassIdentifier: 
   Text: "Gr\xE0cies! Est\xE0 passant per un moment complicat de depressi\xF3 ja que
-    van utilitzar als seus cosins per fer ketchup :( "
+    van utilitzar als seus cosins per fer ketchup :("
   Options:
-  - Text: "Li far\xE9 un regal "
-    NextNode: {fileID: 11400000, guid: 24fed9fed8124994091ff206bc4ab417, type: 2}
+  - Text: "Li far\xE9 un regal"
+    NextNode: {fileID: 11400000, guid: 0e54fce2db59e454787e03afc73fc840, type: 2}
   - Text: Quina pena
     NextNode: {fileID: 11400000, guid: 31b03eff23025154e9d0137eaa5abbf6, type: 2}
