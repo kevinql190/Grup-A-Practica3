@@ -4,21 +4,8 @@ using UnityEngine;
 
 public class Actions : MonoBehaviour
 {
-    public void Move() 
+    public void GoHome() 
     { 
         
-    }
-
-    public void Attack()
-    {
-
-    }
-    public void PlayMusic()
-    {
-
-    }
-    public void Spawn()
-    {
-
     }
 }
