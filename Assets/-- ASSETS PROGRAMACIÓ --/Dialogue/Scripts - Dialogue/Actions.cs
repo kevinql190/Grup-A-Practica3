@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[System.Serializable]
+public class SpawnPoint
+{
+    public Transform spawnLocation;
+    public GameObject prefabToSpawn;
+}
 public class Actions : MonoBehaviour
 {
     private NavMeshAgent navMeshAgent;
@@ -10,6 +16,7 @@ public class Actions : MonoBehaviour
     public Transform destinationObject;
     private Animator animator;
     private DialogueTrigger dialogueTrigger;
+    public List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -83,7 +90,9 @@ public class Actions : MonoBehaviour
 
     //----------------------- Spawn Carrots --------------------------
     public void Spawn() 
-    { 
+    {
+
     }
+
     //--------------------------------------------------------------
 }
