@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CarrotNode
   m_EditorClassIdentifier: 
   Text: "Hola s\xF3c la Maria la pastanaga, estic buscant al meu amic \"Carles el
-    tom\xE0quet\". Per casualitat l'has vist?"
+    tom\xE0quet\". Per casualitat l'has vist? "
   Options:
   - Text: No, no l'he vist
     NextNode: {fileID: 11400000, guid: 10746ceea85f41c4dac573fd955dfead, type: 2}

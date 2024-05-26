@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc2a35d54271d66489a509f96ed04438, type: 3}
   m_Name: Move
   m_EditorClassIdentifier: 
-  Text: 
+  Text: "Ets molt antipatic, doncs m\u2019envaig jo a buscar-lo "
   Options: []

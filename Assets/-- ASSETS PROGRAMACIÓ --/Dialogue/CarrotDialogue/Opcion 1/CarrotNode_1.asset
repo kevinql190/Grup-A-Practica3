@@ -16,6 +16,6 @@ MonoBehaviour:
     regal\u2026"
   Options:
   - Text: Clar, ara el busco
-    NextNode: {fileID: 11400000, guid: 24fed9fed8124994091ff206bc4ab417, type: 2}
+    NextNode: {fileID: 11400000, guid: 17618607f38fc7d4eac613d37e32b663, type: 2}
   - Text: 'No puc srry '
-    NextNode: {fileID: 0}
+    NextNode: {fileID: 11400000, guid: 7f156a17b2ed82c409e589ae90ace5b1, type: 2}
