@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Actions : MonoBehaviour
 {
-    public void GoHome() 
+    public void Move() 
     { 
         
     }
