@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI NameText;
     public TextMeshProUGUI SpeechText;
     public TextMeshProUGUI[] OptionsText;
-    // Start is called before the first frame update
+
     void Awake()
     {
         if (Instance == null)
@@ -49,6 +49,11 @@ public class DialogueManager : MonoBehaviour
             {
                 OptionsText[i].transform.parent.gameObject.SetActive(true);
                 OptionsText[i].text = currentNode.Options[i].Text;
+
+                //  // EXTRA - Realizar acciones según la opción en medio del diálogo
+                int optionIndex = i;
+                OptionsText[i].transform.parent.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
+                OptionsText[i].transform.parent.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => OptionChosen(optionIndex));
             }
             else
             {
@@ -83,17 +88,24 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
-    
-    public void OptionChosen(int option) {
-        _currentNode = _currentNode.Options[option].NextNode;
-        SetText(_currentNode);
-        //End
-        if (_currentNode is EndNode)
+
+    public void OptionChosen(int option)
+    {
+        if (option >= 0 && option < _currentNode.Options.Count)
         {
-            DoEndNode(_currentNode as EndNode);
-        }
-        else {
-            SetText(_currentNode);
+            _currentNode = _currentNode.Options[option].NextNode;
+
+            // Ejecutar la acción del nodo si existe
+            _currentNode.NodeAction?.Invoke(_talker);
+
+            if (_currentNode is EndNode)
+            {
+                DoEndNode(_currentNode as EndNode);
+            }
+            else
+            {
+                SetText(_currentNode);
+            }
         }
     }
 

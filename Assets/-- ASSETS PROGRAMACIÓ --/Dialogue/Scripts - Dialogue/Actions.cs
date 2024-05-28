@@ -17,14 +17,50 @@ public class Actions : MonoBehaviour
     private Animator animator;
     private DialogueTrigger dialogueTrigger;
     public List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
+
+    // EXTRA - Realizar acciones según la opción en medio del diálogo
+    [Header("Action Nodes")]
+    public DialogueNode carrotNode1_1;
+    public DialogueNode carrotNode2_2;
+    public DialogueNode carrotNode3;
+
+        // NPC se vuelve rojo
+    [Header("Texture Change")]
+    public Material redMaterial;
+    private Renderer objectRenderer;
+    private Material originalMaterial;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshObstacle = GetComponent<NavMeshObstacle>();
         animator = GetComponent<Animator>();
         dialogueTrigger = GetComponent<DialogueTrigger>();
+        objectRenderer = GetComponentInChildren<Renderer>();
+        originalMaterial = objectRenderer.material;
+
+        // EXTRA - Realizar acciones según la opción en medio del diálogo
+        carrotNode1_1.NodeAction = (GameObject talker) => {
+            Debug.Log("Acción para el nodo 1");
+        };
+
+        carrotNode2_2.NodeAction = (GameObject talker) => {
+            StartCoroutine(TurnRedForTime());
+        };
+
+        carrotNode3.NodeAction = (GameObject talker) => {
+            Debug.Log("Acción para el nodo 3");
+        };
     }
 
+    // ------------ EXTRA : NPC se vuelve de color rojo ---------------
+    private IEnumerator TurnRedForTime()
+    {
+        objectRenderer.material = redMaterial;
+        yield return new WaitForSeconds(1f);
+        objectRenderer.material = originalMaterial;
+    }
+    //-----------------------------------------------------------------
     //----- El NPC se mueve hacia un objeto concreto (el tomate) ------
     public void Move()
     {

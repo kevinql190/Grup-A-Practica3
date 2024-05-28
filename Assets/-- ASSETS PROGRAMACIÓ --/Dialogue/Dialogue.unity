@@ -235,7 +235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -2.000061}
+  m_AnchoredPosition: {x: 0, y: -2.000122}
   m_SizeDelta: {x: 1400, y: 400}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &72297625
@@ -27879,7 +27879,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.92, y: 4.31, z: 6.1}
+  m_Size: {x: 3.12, y: 4.31, z: 7.2}
   m_Center: {x: 0, y: 2.07, z: 0}
 --- !u!114 &8811298788079782817
 MonoBehaviour:
@@ -27904,6 +27904,10 @@ MonoBehaviour:
   - spawnLocation: {fileID: 225408883}
     prefabToSpawn: {fileID: 3646120368354140838, guid: 97bc453c1b1dec242b645d76493bd09b,
       type: 3}
+  carrotNode1_1: {fileID: 11400000, guid: 17618607f38fc7d4eac613d37e32b663, type: 2}
+  carrotNode2_2: {fileID: 11400000, guid: 31b03eff23025154e9d0137eaa5abbf6, type: 2}
+  carrotNode3: {fileID: 11400000, guid: 64456ddc61a5bff4391125584bff84d7, type: 2}
+  redMaterial: {fileID: 2100000, guid: 6136cc0b27807934c8d62d359a67d46e, type: 2}
 --- !u!4 &8989789790532445768
 Transform:
   m_ObjectHideFlags: 0
