@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: abe9d62b43ba80c4b94f05373a4cbd03, type: 3}
   m_Name: Attack
-  m_EditorClassIdentifier: Assembly-CSharp::EndNode_Attack
-  Text: "Has convertit al meu amic en Ketchup. Prepara\u2019t per morir !"
+  m_EditorClassIdentifier: 
+  Text: 
   Options: []
