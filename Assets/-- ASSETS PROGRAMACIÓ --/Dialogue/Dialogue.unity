@@ -27895,15 +27895,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationObject: {fileID: 1089600881148293095}
   spawnPoints:
-  - spawnLocation: {fileID: 8139046473345824263, guid: 97bc453c1b1dec242b645d76493bd09b,
+  - spawnLocation: {fileID: 460762975}
+    prefabToSpawn: {fileID: 3646120368354140838, guid: 97bc453c1b1dec242b645d76493bd09b,
       type: 3}
-    prefabToSpawn: {fileID: 460762974}
-  - spawnLocation: {fileID: 8139046473345824263, guid: 97bc453c1b1dec242b645d76493bd09b,
+  - spawnLocation: {fileID: 696784257}
+    prefabToSpawn: {fileID: 3646120368354140838, guid: 97bc453c1b1dec242b645d76493bd09b,
       type: 3}
-    prefabToSpawn: {fileID: 696784256}
-  - spawnLocation: {fileID: 8139046473345824263, guid: 97bc453c1b1dec242b645d76493bd09b,
+  - spawnLocation: {fileID: 225408883}
+    prefabToSpawn: {fileID: 3646120368354140838, guid: 97bc453c1b1dec242b645d76493bd09b,
       type: 3}
-    prefabToSpawn: {fileID: 225408882}
 --- !u!4 &8989789790532445768
 Transform:
   m_ObjectHideFlags: 0

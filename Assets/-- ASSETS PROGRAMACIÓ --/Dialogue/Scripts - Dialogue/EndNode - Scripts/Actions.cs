@@ -91,8 +91,25 @@ public class Actions : MonoBehaviour
     //----------------------- Spawn Carrots --------------------------
     public void Spawn() 
     {
-
+        StartCoroutine(SpawnAfterDelay(1.0f));
     }
+    private IEnumerator SpawnAfterDelay(float delay) 
+    {
+        yield return new WaitForSeconds(delay);
+        foreach (SpawnPoint spawnPoint in spawnPoints)
+        {
+            if (spawnPoint.prefabToSpawn != null && spawnPoint.spawnLocation != null)
+            {
+                // Instancia una copia del prefab en la posición y rotación del spawn point
+                GameObject newObject = Instantiate(spawnPoint.prefabToSpawn, spawnPoint.spawnLocation.position, spawnPoint.spawnLocation.rotation);
 
+                // Opcional: Puedes hacer más configuraciones en la nueva instancia aquí
+                // newObject.name = "NombrePersonalizado";
+                // newObject.GetComponent<SomeComponent>().SomeProperty = someValue;
+
+                Debug.Log("Instanciado " + newObject.name + " en " + spawnPoint.spawnLocation.position);
+            }
+        }
+    }
     //--------------------------------------------------------------
 }
