@@ -43,6 +43,7 @@ public class Actions : MonoBehaviour
         originalMaterial = objectRenderer.material;
 
         // EXTRA - Realizar acciones según la opción en medio del diálogo
+            //Emoji
         carrotNode1_1.NodeAction = (GameObject talker) => {
             if (happyEmoji != null) {
                 happyEmoji.SetActive(true);
@@ -67,7 +68,7 @@ public class Actions : MonoBehaviour
     private IEnumerator TurnRedForTime()
     {
         objectRenderer.material = redMaterial;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         objectRenderer.material = originalMaterial;
     }
     //-----------------------------------------------------------------
@@ -75,7 +76,7 @@ public class Actions : MonoBehaviour
     // ------------ EXTRA : Desactivar canvas ---------------
     private IEnumerator DisableCanvasAfterDelay(GameObject canvas)
     {
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(1.5f); 
 
         if (canvas != null)
         {
