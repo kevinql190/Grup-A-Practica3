@@ -53,12 +53,13 @@ public class Actions : MonoBehaviour
     //----------------------- Sound Music --------------------------
     public void SoundMusic() 
     {
-        AudioManager.Instance.PlayMusicLoop("MenuThemeCelery");
+        AudioManager.Instance.PlayMusicLoop("cancionZanahoria");
+        AudioManager.Instance.StopMusicLoop(16.2f);
     }
-    //--------------------------------------------------------------
+        //--------------------------------------------------------------
 
-    //----------------------- Carrot Attack --------------------------
-    public void Attack()
+        //----------------------- Carrot Attack --------------------------
+        public void Attack()
     {
         StartCoroutine(AttackAfterDelay(1.5f));
     }
@@ -100,14 +101,7 @@ public class Actions : MonoBehaviour
         {
             if (spawnPoint.prefabToSpawn != null && spawnPoint.spawnLocation != null)
             {
-                // Instancia una copia del prefab en la posición y rotación del spawn point
                 GameObject newObject = Instantiate(spawnPoint.prefabToSpawn, spawnPoint.spawnLocation.position, spawnPoint.spawnLocation.rotation);
-
-                // Opcional: Puedes hacer más configuraciones en la nueva instancia aquí
-                // newObject.name = "NombrePersonalizado";
-                // newObject.GetComponent<SomeComponent>().SomeProperty = someValue;
-
-                Debug.Log("Instanciado " + newObject.name + " en " + spawnPoint.spawnLocation.position);
             }
         }
     }
