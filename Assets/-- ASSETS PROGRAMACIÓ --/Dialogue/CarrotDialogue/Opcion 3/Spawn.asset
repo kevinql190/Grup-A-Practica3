@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 18a3ad328daf50e428b182b71597eded, type: 3}
   m_Name: Spawn
-  m_EditorClassIdentifier: Assembly-CSharp::EndNode_Spawn
-  Text: 
+  m_EditorClassIdentifier: 
+  Text: "Doncs t\u2019arrepentiras! Trucar\xE9 als meus amics perqu\xE8 m\u2019ajudin
+    >:( !!!!!!! "
   Options: []
