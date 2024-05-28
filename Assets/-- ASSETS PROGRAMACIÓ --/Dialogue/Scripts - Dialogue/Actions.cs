@@ -29,6 +29,9 @@ public class Actions : MonoBehaviour
     public Material redMaterial;
     private Renderer objectRenderer;
     private Material originalMaterial;
+        // Símbolo exclamación/ emoji
+    public GameObject exclamation;
+    public GameObject happyEmoji;
 
     void Start()
     {
@@ -41,15 +44,22 @@ public class Actions : MonoBehaviour
 
         // EXTRA - Realizar acciones según la opción en medio del diálogo
         carrotNode1_1.NodeAction = (GameObject talker) => {
-            Debug.Log("Acción para el nodo 1");
+            if (happyEmoji != null) {
+                happyEmoji.SetActive(true);
+                StartCoroutine(DisableCanvasAfterDelay(happyEmoji));
+            }
         };
-
+            // NPC se pone rojo
         carrotNode2_2.NodeAction = (GameObject talker) => {
             StartCoroutine(TurnRedForTime());
         };
-
+            // Símbolo de exclamación
         carrotNode3.NodeAction = (GameObject talker) => {
-            Debug.Log("Acción para el nodo 3");
+            if (exclamation != null)
+            {
+                exclamation.SetActive(true);
+                StartCoroutine(DisableCanvasAfterDelay(exclamation));
+            }
         };
     }
 
@@ -61,6 +71,20 @@ public class Actions : MonoBehaviour
         objectRenderer.material = originalMaterial;
     }
     //-----------------------------------------------------------------
+
+    // ------------ EXTRA : Desactivar canvas ---------------
+    private IEnumerator DisableCanvasAfterDelay(GameObject canvas)
+    {
+        yield return new WaitForSeconds(1f); 
+
+        if (canvas != null)
+        {
+            // Desactiva el canvas
+            canvas.SetActive(false);
+        }
+    }
+    //-----------------------------------------------------------------
+
     //----- El NPC se mueve hacia un objeto concreto (el tomate) ------
     public void Move()
     {
@@ -92,9 +116,9 @@ public class Actions : MonoBehaviour
         AudioManager.Instance.PlayMusicLoop("cancionZanahoria");
         AudioManager.Instance.StopMusicLoop(16.2f);
     }
-        //--------------------------------------------------------------
+    //--------------------------------------------------------------
 
-        //----------------------- Carrot Attack --------------------------
+    //----------------------- Carrot Attack --------------------------
         public void Attack()
     {
         StartCoroutine(AttackAfterDelay(1.5f));

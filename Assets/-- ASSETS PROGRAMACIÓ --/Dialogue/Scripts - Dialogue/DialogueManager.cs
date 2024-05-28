@@ -49,11 +49,6 @@ public class DialogueManager : MonoBehaviour
             {
                 OptionsText[i].transform.parent.gameObject.SetActive(true);
                 OptionsText[i].text = currentNode.Options[i].Text;
-
-                //  // EXTRA - Realizar acciones según la opción en medio del diálogo
-                int optionIndex = i;
-                OptionsText[i].transform.parent.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
-                OptionsText[i].transform.parent.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => OptionChosen(optionIndex));
             }
             else
             {
@@ -94,7 +89,7 @@ public class DialogueManager : MonoBehaviour
         if (option >= 0 && option < _currentNode.Options.Count)
         {
             _currentNode = _currentNode.Options[option].NextNode;
-
+            SetText(_currentNode);
             // Ejecutar la acción del nodo si existe
             _currentNode.NodeAction?.Invoke(_talker);
 
