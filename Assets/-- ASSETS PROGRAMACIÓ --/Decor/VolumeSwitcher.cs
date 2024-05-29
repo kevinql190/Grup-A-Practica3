@@ -1,35 +1,30 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
+using System.Collections;
 
 public class VolumeSwitcher : MonoBehaviour
 {
-    public Volume volumeInicial;
-    public Volume volumeTemporal;
-    public float switchDuration = 5.0f; // Duración en segundos que el volumen temporal estará activo
-
-    private void Start (){
-        volumeInicial = GetComponent<Volume>();
-        volumeTemporal = GetComponent<Volume>();
-        
-    }
+    public Volume volume;
+    public VolumeProfile profileInicial;
+    public VolumeProfile profileTemporal;
+    public float switchDuration = 5.0f; // Duración en segundos que el perfil temporal estará activo
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Asegúrate de que el objeto tiene el tag "Player"
+        if (other.CompareTag("Player"))
         {
-            StartCoroutine(SwitchVolume());
+            StartCoroutine(SwitchVolumeProfile());
         }
     }
 
-    private IEnumerator SwitchVolume()
+    private IEnumerator SwitchVolumeProfile()
     {
-        volumeInicial.enabled = false;
-        volumeTemporal.enabled = true;
+        Debug.Log("Activando perfil temporal...");
+        volume.profile = profileTemporal;
 
         yield return new WaitForSeconds(switchDuration);
 
-        volumeTemporal.enabled = false;
-        volumeInicial.enabled = true;
+        Debug.Log("Restaurando perfil inicial...");
+        volume.profile = profileInicial;
     }
 }
