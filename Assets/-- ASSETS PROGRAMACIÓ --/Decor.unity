@@ -1570,7 +1570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &168203747
 Transform:
   m_ObjectHideFlags: 0
@@ -59761,6 +59761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1842910264}
   - component: {fileID: 1842910265}
+  - component: {fileID: 1842910266}
   m_Layer: 0
   m_Name: LightSwitcher
   m_TagString: Untagged
@@ -59804,6 +59805,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 30, y: 3, z: 30}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1842910266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842910263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b859bd54cee0b7498acc5185d59146e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLight: {fileID: 2109342511}
+  interiorRef: {fileID: 1252942039}
+  exteriorRef: {fileID: 1921113776}
+  switchDuration: 3
 --- !u!1 &1847307621
 GameObject:
   m_ObjectHideFlags: 0
@@ -62080,7 +62097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2109342510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62115,8 +62132,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.90943396, g: 0.90943396, b: 0.90943396, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -62125,7 +62142,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.201
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -62159,7 +62176,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5364
+  m_ColorTemperature: 5912
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
