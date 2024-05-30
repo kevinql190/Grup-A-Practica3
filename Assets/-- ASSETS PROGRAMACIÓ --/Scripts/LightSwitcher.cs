@@ -6,7 +6,7 @@ public class LightSwitcher : MonoBehaviour
     public Light currentLight;
     public Light interiorRef;
     public Light exteriorRef;
-    public float switchDuration = 3.0f;
+    public float switchDuration = 1.0f;
     IEnumerator changingLight;
     private void OnTriggerEnter(Collider other)
     {
