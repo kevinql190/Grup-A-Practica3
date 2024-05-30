@@ -18,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI SpeechText;
     public TextMeshProUGUI[] OptionsText;
 
+    public GameObject particles;
+
     void Awake()
     {
         if (Instance == null)
@@ -107,6 +109,7 @@ public class DialogueManager : MonoBehaviour
     private void DoEndNode(EndNode currentNode)
     {
         currentNode.OnChosen(_talker);
+        HideParticles();
         StartCoroutine(HideDialogueWithDelay());
     }
 
@@ -114,5 +117,9 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f); // Espera 1 segundo
         HideDialogue();
+    }
+    private void HideParticles()
+    {
+        particles.SetActive(false);
     }
 }
