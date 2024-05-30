@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761616195702893692}
   m_Layer: 0
-  m_Name: CebesExplosives
+  m_Name: Bombes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 813861834303357499}
   - component: {fileID: 8696297923061247641}
   m_Layer: 0
-  m_Name: AreaCebes
+  m_Name: AreaBombes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.83, z: -0}
-  m_LocalScale: {x: 4.7648993, y: 4.7648993, z: 4.7648993}
+  m_LocalScale: {x: 63.349335, y: 63.349335, z: 63.349335}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1761616195702893692}
