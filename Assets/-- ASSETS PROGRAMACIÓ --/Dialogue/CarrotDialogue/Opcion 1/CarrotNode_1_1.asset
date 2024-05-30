@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: "Moltes gr\xE0cies! Ets molt amable"
   Options:
-  - Text: 'Derres '
+  - Text: 'De res '
     NextNode: {fileID: 11400000, guid: bb123273d13cb414dbddb05f2910015a, type: 2}
   - Text: Cap problema!
     NextNode: {fileID: 11400000, guid: bb123273d13cb414dbddb05f2910015a, type: 2}
