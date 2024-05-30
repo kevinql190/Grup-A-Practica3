@@ -120,8 +120,9 @@ public class Actions : MonoBehaviour
     //--------------------------------------------------------------
 
     //----------------------- Carrot Attack --------------------------
-        public void Attack()
+    public void Attack()
     {
+        gameObject.layer = LayerMask.NameToLayer("Enemies");
         StartCoroutine(AttackAfterDelay(1.5f));
     }
 
@@ -153,7 +154,9 @@ public class Actions : MonoBehaviour
     //----------------------- Spawn Carrots --------------------------
     public void Spawn() 
     {
+        gameObject.layer = LayerMask.NameToLayer("Enemies");
         StartCoroutine(SpawnAfterDelay(1.0f));
+        StartCoroutine(AttackAfterDelay(1.5f));
     }
     private IEnumerator SpawnAfterDelay(float delay) 
     {
