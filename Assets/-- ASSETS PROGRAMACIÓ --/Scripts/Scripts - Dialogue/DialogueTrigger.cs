@@ -17,12 +17,6 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        PlayerInputHandler.Instance.playerInput.SwitchCurrentActionMap("Gameplay");
-    }
-
     // Método para desactivar completamente el trigger
     public void DisableTrigger()
     {

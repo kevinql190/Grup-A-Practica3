@@ -979,7 +979,7 @@ Transform:
   m_GameObject: {fileID: 85456775}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.76, y: 12.026268, z: -0.6}
+  m_LocalPosition: {x: -26.72, y: 12.026268, z: 5.56}
   m_LocalScale: {x: 2.6175, y: 2.6175, z: 2.6175}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1338,7 +1338,7 @@ PrefabInstance:
     - target: {fileID: 4666148902149073026, guid: 0f6bd9044e2396a4bb8891898830d037,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.102463
+      value: -18.31
       objectReference: {fileID: 0}
     - target: {fileID: 4666148902149073026, guid: 0f6bd9044e2396a4bb8891898830d037,
         type: 3}
@@ -1348,7 +1348,7 @@ PrefabInstance:
     - target: {fileID: 4666148902149073026, guid: 0f6bd9044e2396a4bb8891898830d037,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.845625
+      value: 2.35
       objectReference: {fileID: 0}
     - target: {fileID: 4666148902149073026, guid: 0f6bd9044e2396a4bb8891898830d037,
         type: 3}
@@ -29244,7 +29244,7 @@ Transform:
   m_GameObject: {fileID: 265413939}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.53, y: 12.026268, z: -3.17}
+  m_LocalPosition: {x: -10.42, y: 12.026268, z: -8.64}
   m_LocalScale: {x: 2.6175, y: 2.6175, z: 2.6175}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34696,8 +34696,7 @@ MonoBehaviour:
   enterRooms: []
   exitRooms:
   - {fileID: 173691720}
-  respawnPoint: {fileID: 4666148902149073026, guid: 0f6bd9044e2396a4bb8891898830d037,
-    type: 3}
+  respawnPoint: {fileID: 1951995988}
   anyFoodToUnlockThisRoom: 0
 --- !u!1839735485 &892157384
 Tilemap:
@@ -61604,12 +61603,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 30, y: 3, z: 30}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 41.78392, y: 3, z: 30}
+  m_Center: {x: 5.89196, y: 0, z: 0}
 --- !u!114 &1842910266
 MonoBehaviour:
   m_ObjectHideFlags: 0

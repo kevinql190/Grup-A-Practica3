@@ -5,8 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DoNothing", menuName = "Dialogue/EndNodes/DoNothing", order = 1)]
 public class EndNode : DialogueNode
 {
-    public virtual void OnChosen(GameObject talker) 
+    public virtual void OnChosen(GameObject talker)
     {
+        Cursor.lockState = CursorLockMode.Locked;
         PlayerInputHandler.Instance.playerInput.SwitchCurrentActionMap("Gameplay");
     }
 }

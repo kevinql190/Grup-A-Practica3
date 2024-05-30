@@ -13,6 +13,8 @@ public class PlayerCombat : MonoBehaviour
     [Header("Attack Layers")]
     [SerializeField] private LayerMask _enemyLayer;
     [SerializeField] private LayerMask _breakableLayer;
+    [Header("Trail")]
+    [SerializeField] ParticleSystem attackTrail;
     [Header("Gizmos")]
     [SerializeField] private bool attackGizmo;
     [SerializeField] private float attackDistance;
@@ -48,6 +50,9 @@ public class PlayerCombat : MonoBehaviour
         Collider[] enemyColliders = Physics.OverlapSphere(AttackPoint, attackRadius, _enemyLayer);
         if (enemyColliders.Length != 0) DamageClosestEnemy(enemyColliders);
         attackTime.StartCooldown();
+        attackTrail.Play();
+        yield return null;
+        attackTrail.Stop();
     }
     private void DamageClosestEnemy(Collider[] enemies)
     {
