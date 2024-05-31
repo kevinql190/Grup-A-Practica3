@@ -57940,10 +57940,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint_HealParticles
       objectReference: {fileID: 0}
+    - target: {fileID: 7126775646144783846, guid: 46d131b98b72c76498e248e78b16aa66,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126775646144783846, guid: 46d131b98b72c76498e248e78b16aa66,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9167556379396964942, guid: 46d131b98b72c76498e248e78b16aa66,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.95
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9167556379396964942, guid: 46d131b98b72c76498e248e78b16aa66,
         type: 3}
@@ -57953,7 +57963,7 @@ PrefabInstance:
     - target: {fileID: 9167556379396964942, guid: 46d131b98b72c76498e248e78b16aa66,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 213.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9167556379396964942, guid: 46d131b98b72c76498e248e78b16aa66,
         type: 3}
@@ -59021,7 +59031,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healParticles: {fileID: 1353490021}
-  healVelocity: 10
 --- !u!136 &1431169004
 CapsuleCollider:
   m_ObjectHideFlags: 0
